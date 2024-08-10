@@ -10,6 +10,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: auto;
     }
     img{
         width: 100%;
@@ -17,16 +18,56 @@
    .container{
     width: 95%;
     text-align: center;
+    margin: auto;
    }
+   .Container1 input {
+    
+    text-align: center;
+     width:700px; 
+   }
+   .Container1{
+    padding-bottom:15px ;
+    text-align: center;
+   }
+   .category1 {
+   /* width: 200px; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   }
+   
+   #navbar img{
+    width: 70px;
+   }
+   .category1 img{
+    width: 200px;                                                                                                                                                                                                                                                                                                                          
+   } 
+   .container2 img{
+    width: 50px;
+
+  
+   }
+  
+
 </style>
 <body>
+    <!-- <a href="/log.html"></a> -->
     <div id="navbar">
-        <h2>Myntra</h2>
+        <img src="./myntra-logo-brandlogos.net_.png">
+        <!-- <h2>Myntra</h2> -->
         <p>Mens</p>
         <p>Womens</p>
-        <p>kids</p>
-        <button>Login</button>
-        <button>Add to cart</button>
+        <p>Kids</p>
+        <p>Home Decor</p>
+       <a href="./login.html"><button>Login</button></a>
+        <button>Add to bag</button>
+        
+    </div>
+    <div class="Container1">
+        <form action="Search" method="get">
+            <input type="search" placeholder="Search...">
+            <button>Search</button>
+        </form>
     </div>
     <div>
         <img src="https://pbs.twimg.com/media/FJ7-8hWaMAkC_s-.jpg"/>
@@ -36,5 +77,43 @@
         <h1>Coupans Capitals</h1>
         <img src="https://www.couponscurry.com/pics/blog/1643115724_how-to-use-or-redeem-myntra-coupon-codes.jpg"/>
     </div>
+    <div>
+        <h1>Shop By Category</h1>
+    </div>
+    <div class="category1">
+        <div>
+            <img src="https://i.pinimg.com/736x/4b/ea/c1/4beac1a2ceb6ff197cd14c57547d5356.jpg">
+            <h4>Mens Wear</h4>
+            <p>40% to 60% OFF</p>
+        </div>
+        <div>
+            <img src="https://img.shopstyle-cdn.com/sim/8b/c3/8bc3bd1d2f3de1ad6e244f3a20560408_best/miss-selfridge-elastic-waist-pant-in-khaki.jpg">
+            <h4>Womens Wear</h4>
+            <p>50% to 70% OFF</p>
+        </div>
+        <div>
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/8/14/937f7591-3079-4e9c-9900-49d958495e131692015704516-bb1.jpg">
+            <h4>Kids Wear</h4>
+            <p>70% to 800% OFF</p>
+        </div>
+        <div>
+            <img src="https://findbestforyou.com/wp-content/uploads/2023/08/home_decor-450x500.jpg">
+            <h4>Home Decor</h4>
+            <p>70% to 800% OFF</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div>
+            <h1>About Us</h1>
+            <!-- <p>India's largest e-commerce store for fashion and lifestyle products</p> -->
+            <p>WWW.Myntra.com</p>
+            <p>visit us on </p>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1946323-1646407.png?f=webp">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png">
+            <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png">
+        </div>
+
+    </div>
+    
 </body>
 </html>

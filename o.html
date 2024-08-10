@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .order-details {
+            margin-top: 20px;
+        }
+        .order-details h2 {
+            margin-top: 0;
+        }
+        .order-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed. Below are the details:</p>
+        
+        <!-- Example order confirmation section -->
+        <div class="order-details">
+            <h2>Order Confirmation</h2>
+            <p><strong>Order Number:</strong> <span id="order-number">Loading...</span></p>
+            <p><strong>Date:</strong> <span id="order-date">August 8, 2024</span></p>
+            <p><strong>Items:</strong></p>
+            <ul>
+                <li>Item 1 - $10.00</li>
+                <li>Item 2 - $20.00</li>
+            </ul>
+            <p><strong>Total Amount:</strong> $30.00</p>
+        </div>
+        
+        <p>If you have any questions, please contact us at <a href="mailto:support@example.com">support@example.com</a>.</p>
+    </div>
+
+    <script>
+        // Function to generate a random confirmation code
+        function generateConfirmationCode() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let code = '';
+            for (let i = 0; i < 8; i++) {
+                const randomIndex = Math.floor(Math.random() * chars.length);
+                code += chars[randomIndex];
+            }
+            return code;
+        }
+
+        // Set the confirmation code in the HTML
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderNumberElement = document.getElementById('order-number');
+            const confirmationCode = generateConfirmationCode();
+            orderNumberElement.textContent = confirmationCode;
+        });
+    </script>
+</body>
+</html>
