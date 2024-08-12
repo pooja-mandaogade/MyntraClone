@@ -14,16 +14,18 @@
     }
     img{
         width: 100%;
+       
     }
    .container{
-    width: 95%;
+    width: 85%;
     text-align: center;
     margin: auto;
    }
    .Container1 input {
     
     text-align: center;
-     width:700px; 
+     width:700px;
+     /* border-radius:5px ;  */
    }
    .Container1{
     padding-bottom:15px ;
@@ -40,13 +42,46 @@
     width: 70px;
    }
    .category1 img{
-    width: 200px;                                                                                                                                                                                                                                                                                                                          
+    width: 200px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;                                                                                                                                                                                                                                                                                                                         
    } 
    .container2 img{
-    width: 50px;
-
-  
+    width: 20px;
    }
+   .container2{
+    position: relative;
+    bottom: 550px;
+    text-align: right;
+   }
+   .container3{
+    text-align: left;
+   }
+   .container3 p{
+    color: grey;
+   }
+   .container4 {
+    position: relative;
+    bottom : 146px;
+   }
+   .container4 p{
+    color: grey;
+}
+.container5 img{
+    width: 200px;    
+}
+.container5{
+    text-align: end;
+    position: relative;
+    bottom: 570px;
+}
+.container6 img{
+    width:750px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#navbar img{
+    width: 30px;
+}
+
   
 
 </style>
@@ -55,12 +90,11 @@
     <div id="navbar">
         <img src="./myntra-logo-brandlogos.net_.png">
         <!-- <h2>Myntra</h2> -->
-        <p>Mens</p>
-        <p>Womens</p>
-        <p>Kids</p>
-        <p>Home Decor</p>
-       <a href="./login.html"><button>Login</button></a>
-        <button>Add to bag</button>
+        <a href="./product.html"><p>Mens</p></a>
+        <a href="./product.html"><p>Womens</p></a>
+       <a href="./product.html"><p>Kids</p></a>
+       <a href="./login.html"><img src="user.png"></a>
+        <a href="./cart.html"><img src="shopping-bag.png"></a>
         
     </div>
     <div class="Container1">
@@ -92,19 +126,53 @@
             <p>50% to 70% OFF</p>
         </div>
         <div>
-            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/8/14/937f7591-3079-4e9c-9900-49d958495e131692015704516-bb1.jpg">
-            <h4>Kids Wear</h4>
-            <p>70% to 800% OFF</p>
+            <img src="https://cdn.prod.website-files.com/65267322c347d563ef735f53/660be1cca3f3cfce46d1a0af_image%201.webp">
+            <h4>Footwear</h4>
+            <p>50% to 70% OFF</p>
         </div>
         <div>
-            <img src="https://findbestforyou.com/wp-content/uploads/2023/08/home_decor-450x500.jpg">
-            <h4>Home Decor</h4>
-            <p>70% to 800% OFF</p>
+            <img src="https://cdn.shopify.com/s/files/1/0593/1017/8440/products/Hope_KSchuller_01_074_Family_Confetti_8x10_RGB_C_1200x628.jpg?v=1680101818">
+            <h4>Cosmatic</h4>
+            <p>70% to 90% OFF</p>
         </div>
+        <div>
+            <img src="https://i.pinimg.com/736x/bf/5b/d6/bf5bd6f5cdf822a07dc4332d69f259c3.jpg">
+            <h4>Home Decor</h4>
+            <p>70% to 80% OFF</p>
+        </div>
+    </div>
+    <div class="container6">
+        <img src="https://images.freekaamaal.com/post_images/1683532171.webp">
+
+    </div>
+    <div class="container3">
+         <h5>ONLINE SHOPPING</h5>
+        <P>Men</P>
+        <p>Women</p> 
+        <p>Kids</p>
+    </div>
+    <div class="container4">
+        <h5>CUSTOMER POLICIES</h5>
+        <p>Contact Us</p>
+        <p>FAQ</p>
+        <p>T&C</p>
+        <p>Terms Of Use</p>
+        <p>Track Orders</p>
+        <p>Shipping</p>
+        <p>Returns</p>
+        <p>Cancellation</p>
+        <p>Returns</p>
+        <p>Privacy Policy</p>
+        <p>Grievance Officer</p>
+    </div>
+    <div class="container5">
+        <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+        <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
+        <img src="data:image/png;base64,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" >
     </div>
     <div class="container2">
         <div>
-            <h1>About Us</h1>
+            <h4>About Us</h4>
             <!-- <p>India's largest e-commerce store for fashion and lifestyle products</p> -->
             <p>WWW.Myntra.com</p>
             <p>visit us on </p>
@@ -112,7 +180,7 @@
             <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png">
             <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png">
         </div>
-
+            
     </div>
     
 </body>
